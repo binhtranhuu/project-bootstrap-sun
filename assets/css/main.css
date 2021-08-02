@@ -225,3 +225,30 @@
   z-index: 2;
   transition: all 0.25s linear;
 }
+
+/* CSS Number */
+.number {
+  background-color: var(--third-color);
+}
+
+.number__item {
+  padding: 8.5rem 3.5rem;
+  color: var(--white-color);
+  border-left: 1px solid var(--white-color);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.number__item:last-child {
+  border-right: 1px solid var(--white-color);
+}
+
+.number__item-count {
+  font-size: 7.2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.number__item-text {
+  line-height: 1.4;
+}
