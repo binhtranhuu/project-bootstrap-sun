@@ -17,15 +17,10 @@
     />
 
     <!-- Custom Css -->
-    <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/base.css" />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="stylesheet" href="./assets/css/responsive.css" />
     <link rel="stylesheet" href="./assets/fonts/css/line-awesome.min.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
 
     <!-- Google font -->
     <link
@@ -34,6 +29,135 @@
     />
   </head>
   <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__top">
+          <a class="header__logo" href="index.html">MoGo</a
+          ><i class="fa fa-bars header-toggle"></i>
+          <ul class="header__menu">
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">About</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">Service</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">Work</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">Blog</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">Contact</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-icon" href="#"
+                ><i class="las la-shopping-cart"></i
+              ></a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-icon" href="#"
+                ><i class="las la-search"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="header__main">
+          <div class="row">
+            <div class="col col-md-8 offset-md-2">
+              <h2 class="header__main-caption">Creative Template</h2>
+              <h1 class="header__main-title">Welcome to MoGo</h1>
+              <a class="btn btn-outline-primary header__main-more" href="#"
+                >Learn more</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="header__bottom">
+          <div class="row">
+            <div
+              class="
+                col col-md-3
+                header__bottom-item header__bottom-item--active
+              "
+            >
+              <span class="header__bottom-number">01</span>
+              <span class="header__bottom-text">Intro</span>
+            </div>
+            <div class="col col-md-3 header__bottom-item">
+              <span class="header__bottom-number">02</span>
+              <span class="header__bottom-text">Work</span>
+            </div>
+            <div class="col col-md-3 header__bottom-item">
+              <span class="header__bottom-number">03</span>
+              <span class="header__bottom-text">About</span>
+            </div>
+            <div class="col col-md-3 header__bottom-item">
+              <span class="header__bottom-number">04</span>
+              <span class="header__bottom-text">Contacts</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- HTML About -->
+    <section class="about">
+      <div class="container">
+        <div class="row">
+          <div class="col col-md-8 offset-md-2">
+            <div class="block">
+              <h3 class="block__caption">What we do</h3>
+              <h2 class="block__title">Story about us</h2>
+              <p class="block__desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__list">
+          <div class="about__item about__item--active">
+            <img
+              src="./assets/images/img-about1.png"
+              alt="About"
+              class="about__item-image img-fluid"
+            />
+            <div class="about__item-content">
+              <i class="about__item-icon las la-user-friends"></i>
+              <span class="about__item-title">Supter Team</span>
+            </div>
+          </div>
+          <div class="about__item">
+            <img
+              src="./assets/images/img-about2.png"
+              alt="About"
+              class="about__item-image img-fluid"
+            />
+            <div class="about__item-content">
+              <i class="about__item-icon las la-heart"></i>
+              <span class="about__item-title">Supter Team</span>
+            </div>
+          </div>
+          <div class="about__item">
+            <img
+              src="./assets/images/img-about3.png"
+              alt="About"
+              class="about__item-image img-fluid"
+            />
+            <div class="about__item-content">
+              <i class="about__item-icon las la-grin-hearts"></i>
+              <span class="about__item-title">Supter Team</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Bootstrap JavaScript Libraries -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
