@@ -416,3 +416,113 @@
   height: 1.5rem;
   background-image: url("../images/icon-angle-right.png");
 }
+
+/* CSS Team */
+.team {
+  padding: 9.3rem 0 11rem;
+}
+
+.team__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -3rem;
+}
+
+.team__item {
+  width: calc(33.333% - 3rem);
+  margin-left: 3rem;
+}
+
+.team__item-image {
+  width: 100%;
+}
+
+.team__item-media {
+  position: relative;
+}
+
+.team__item-media::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--third-color);
+  transition: transform 0.25s linear;
+  z-index: -1;
+}
+
+.team__item-social {
+  color: var(--white-color);
+  text-transform: uppercase;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background: linear-gradient(
+    to bottom,
+    rgba(233, 131, 130, 0.8),
+    rgba(238, 216, 137, 0.8)
+  );
+  line-height: 1.4;
+  z-index: 2;
+  transition: all 0.25s linear;
+}
+
+.team__item-icon {
+  color: var(--primary-color);
+  display: inline-block;
+  font-size: 1.8rem;
+  padding: 18px;
+  background-color: var(--secondary-color);
+  border-left: 1px solid var(--primary-color);
+}
+
+.team__item-icon:first-child {
+  border-left: 0;
+}
+
+.team__item-icon.team__item-icon--active {
+  color: var(--white-color);
+  background-color: var(--primary-color);
+}
+
+.team__item-content {
+  text-align: center;
+}
+
+.team__item-author {
+  padding-top: 3rem;
+}
+
+.team__item-desc {
+  font-style: italic;
+  font-family: var(--secondary-font);
+  font-size: 1.3rem;
+  font-weight: 300;
+  padding-top: 0.5rem;
+}
+
+.team__item:hover,
+.team__item.team__item--active {
+  transform: translate(-1rem, -1rem);
+}
+
+.team__item:hover .team__item-social,
+.team__item.team__item--active .team__item-social {
+  opacity: 1;
+  visibility: visible;
+}
+
+.team__item:hover .team__item-media::after,
+.team__item.team__item--active .team__item-media::after {
+  transform: translate(1rem, 1rem);
+}
