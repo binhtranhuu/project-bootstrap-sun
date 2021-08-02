@@ -596,3 +596,37 @@
 .work__item-icon {
   margin-bottom: 1.8rem;
 }
+
+/* CSS Customer */
+.customer {
+  padding-bottom: 12rem;
+}
+
+.customer__item-image {
+  width: 80%;
+}
+
+.customer__item-text {
+  font-family: var(--secondary-font);
+  font-size: 1.5rem;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+.customer__item-customer {
+  font-size: 1.4rem;
+  font-family: var(--third-font);
+  position: relative;
+  padding-left: 7rem;
+}
+
+.customer__item-customer::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0rem;
+  width: 6rem;
+  height: 0.3rem;
+  background-color: var(--primary-color);
+  transform: translateY(-50%);
+}
