@@ -369,3 +369,50 @@
   background-color: var(--third-color);
   border-radius: 2rem;
 }
+
+/* CSS Quote */
+.quote {
+  padding: 7rem 0;
+  background-color: var(--gray-color);
+}
+
+.quote__item-image {
+  padding: 40px;
+  border: 1px solid var(--third-color);
+}
+
+.quote__item-text {
+  font-family: var(--secondary-font);
+  font-size: 1.5rem;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+.quote__item-customer {
+  font-size: 1.4rem;
+  font-family: var(--third-font);
+  position: relative;
+  padding-left: 7rem;
+}
+
+.quote__item-customer::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0rem;
+  width: 6rem;
+  height: 0.3rem;
+  background-color: var(--primary-color);
+  transform: translateY(-50%);
+}
+
+.carousel-control-prev-icon {
+  width: 1rem;
+  height: 1.5rem;
+  background-image: url("../images/icon-angle-left.png");
+}
+.carousel-control-next-icon {
+  width: 1rem;
+  height: 1.5rem;
+  background-image: url("../images/icon-angle-right.png");
+}
