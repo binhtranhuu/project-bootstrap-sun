@@ -252,3 +252,48 @@
 .number__item-text {
   line-height: 1.4;
 }
+
+/* Service */
+.service {
+  padding: 11rem 0 12rem;
+}
+
+.service__list {
+  margin-top: 3.5rem;
+}
+
+.service__list:first-child {
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 5rem;
+  margin-bottom: 5rem;
+}
+
+.service__item {
+  display: flex;
+  align-items: flex-start;
+}
+
+.service__item-image {
+  margin-right: 6rem;
+  margin-left: 3rem;
+  display: inline-block;
+}
+
+.service__item-title {
+  font-size: 1.4rem;
+  color: var(--title-color);
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+.service__item-desc {
+  color: var(--text-color);
+  line-height: 1.6;
+  font-weight: 300;
+  font-family: var(--secondary-font);
+}
+
+.service__item-info {
+  padding-right: 2.7rem;
+}
