@@ -1,20 +1,12 @@
 .header {
   min-height: 100rem;
-  background: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(233, 131, 130, 0.8)),
-      to(rgba(238, 216, 137, 0.8))
-    ),
-    url("../images/img-header-bg.jpg") no-repeat center/cover;
   background: linear-gradient(
       to bottom,
-      rgba(233, 131, 130, 0.8),
-      rgba(238, 216, 137, 0.8)
+      var(--primary-color-gradient),
+      var(--secondary-color-gradient)
     ),
     url("../images/img-header-bg.jpg") no-repeat center/cover;
-  color: white;
+  color: var(--white-color);
 }
 
 .header__top {
@@ -27,7 +19,7 @@
 .header__logo {
   font-size: 3rem;
   font-weight: bold;
-  color: white;
+  color: var(--white-color);
 }
 
 .header__menu {
@@ -149,6 +141,11 @@
   font-size: 1.8rem;
 }
 
+.header__toggle {
+  display: none;
+  font-size: 2.5rem;
+}
+
 /* CSS About */
 .about {
   padding: 9.3rem 0 11rem;
@@ -218,8 +215,8 @@
   flex-direction: column;
   background: linear-gradient(
     to bottom,
-    rgba(233, 131, 130, 0.8),
-    rgba(238, 216, 137, 0.8)
+    var(--primary-color-gradient),
+    var(--secondary-color-gradient)
   );
   line-height: 1.4;
   z-index: 2;
@@ -303,8 +300,8 @@
   padding-top: 11rem;
   background: linear-gradient(
       to bottom,
-      rgba(255, 255, 255, 0.8),
-      rgba(255, 255, 255, 0.8)
+      var(--white-color-gradient),
+      var(--white-color-gradient)
     ),
     url("../images/img-device-bg.png") no-repeat center/cover;
 }
@@ -469,8 +466,8 @@
   flex-direction: row;
   background: linear-gradient(
     to bottom,
-    rgba(233, 131, 130, 0.8),
-    rgba(238, 216, 137, 0.8)
+    var(--primary-color-gradient),
+    var(--secondary-color-gradient)
   );
   line-height: 1.4;
   z-index: 2;
@@ -568,8 +565,8 @@
   flex-direction: column;
   background: linear-gradient(
     to bottom,
-    rgba(233, 131, 130, 0.8),
-    rgba(238, 216, 137, 0.8)
+    var(--primary-color-gradient),
+    var(--secondary-color-gradient)
   );
   visibility: hidden;
   opacity: 0;
@@ -635,8 +632,8 @@
 .client {
   background: linear-gradient(
       to bottom,
-      rgba(255, 255, 255, 0.8),
-      rgba(255, 255, 255, 0.8)
+      var(--white-color-gradient),
+      var(--white-color-gradient)
     ),
     url("../images/img-people-bg.png") no-repeat center/cover;
   padding: 11rem 0;
@@ -753,8 +750,8 @@
   padding: 5.5rem 0;
   background: linear-gradient(
       to bottom,
-      rgba(255, 255, 255, 0.8),
-      rgba(255, 255, 255, 0.8)
+      var(--white-color-gradient),
+      var(--white-color-gradient)
     ),
     url("../images/img-map.png") no-repeat center/cover;
 }
@@ -789,7 +786,7 @@
 }
 
 .footer {
-  padding-top: 75px;
+  padding-top: 7.5rem;
   background-color: var(--gray-color);
 }
 
