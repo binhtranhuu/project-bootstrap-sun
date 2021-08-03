@@ -787,3 +787,122 @@
   transform: translateX(-50%);
   background-color: var(--primary-color);
 }
+
+.footer {
+  padding-top: 75px;
+  background-color: var(--gray-color);
+}
+
+.footer__info {
+  padding-right: 2rem;
+}
+
+.footer__logo {
+  color: var(--gray-dark-color);
+  font-size: 4.6rem;
+  font-weight: 700;
+  margin-bottom: 4.2rem;
+}
+
+.footer__desc {
+  color: var(--text-color);
+  font-family: var(--secondary-font);
+  line-height: 1.4;
+  font-weight: 300;
+  margin-bottom: 5rem;
+}
+
+.footer__follow {
+  color: var(--title-color);
+  padding-bottom: 1.8rem;
+  margin-bottom: 1.8rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.footer__follow-number {
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.footer__social {
+  margin-bottom: 3.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.footer__social-text {
+  font-family: var(--secondary-font);
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.footer__social-icon {
+  color: var(--third-color);
+  margin-left: 1.6rem;
+  font-size: 2.5rem;
+}
+
+.footer__input {
+  font-size: 1.4rem;
+  font-family: var(--secondary-font);
+  border: 1px solid var(--border-color);
+  padding: 1rem;
+}
+
+.footer__button {
+  font-size: 1.4rem;
+  background-color: var(--third-color);
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  color: var(--white-color);
+  padding: 0 3rem;
+}
+
+.footer__heading {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+}
+
+.footer__post-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.footer__post-media {
+  margin-right: 2rem;
+}
+
+.footer__post-title {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.footer__post-date {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: var(--text-color);
+  font-family: var(--secondary-font);
+}
+
+.footer__instagram-img {
+  width: 100%;
+}
+
+.footer__bottom {
+  text-align: center;
+  margin-top: 7rem;
+}
+
+.footer__copyright {
+  padding: 2.5rem;
+  border-top: 1px solid var(--border-color);
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.footer__author {
+  color: var(--primary-color);
+}
